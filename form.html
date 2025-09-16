@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форми</title>
+</head>
+<body>
+    <h1>Лабораторна робота №1</h1>
+    <h2>Виконала Булгакова А.В.</h2>
+    <h2>Анд 31</h2>
+    <h3>Варіант №4 </h3>
+    <hr />
+    <a href="index.html">Головна сторінка</a>
+    <h3>Завдання</h3>
+    <p>
+        Необхідно розробити форму для введення товару до веб-системи.
+        Необхідно заповнити наступні данні:  
+    </p>
+    <ul>
+        <li>
+            дані про товар, включають назву товару, тип товару(вибирається зі списку), 
+            дату виробництва, ціну, кількість на складі (ціле число від 1 до 100000);
+        </li>
+        <li>
+            дані про виробника, включають назву, юридичну адресу, 
+            електрону пошту, посилання на веб-сайт, коментарі.
+        </li>
+        </ul>
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Товар</legend>
+                <label>
+                    Назва товару
+                    <input id="goods_name" type="text" />
+                </label>
+                <label>
+                    Тип
+                <select>
+                    <option>Сукня</option>
+                    <option>Спідниця/шорти</option>
+                    <option>Джинси</option>
+                    <option>Штани</option>
+                    <option>Футболка</option>
+                    <option>Сорочка</option>
+                </select>
+                </label>
+                <lable>
+                    Дата виробництва
+                    <input id="goods_date" type="date" />
+                </lable>
+                <label>
+                    Ціна
+                    <input id="goods_price" type="text" />
+                </label>
+                <label>
+                    Кількість на складі
+                    <input id="goods_number" type="number" min="1" max="1000"/>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Виробник</legend>
+                <label>
+                    Назва виробника
+                    <input id="manufacturer_name" type="text" />
+                </label>
+                <label>
+                    Юридична дреса
+                    <input id="manufacturer_address" type="text" />
+                </label>
+                <label>
+                    Електрона пошта
+                    <input id="manufacturer_email" type="email" />
+                </label>
+                <label>
+                    Веб-сайт
+                    <input id="manufacturer_website" type="url" />
+                </label>
+                <label>
+                </br> Коментарі
+                    <textarea rows="5" cols="50"></textarea>
+                </label>
+            </fieldset>
+            <button type="submit">Відправити</button>
+            <button type="reset">Reset</button>
+        </form>
+    </body>
+</html>
